@@ -7,109 +7,218 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="header">
-      <img alt="Main Logo" src="" />
-      <h1 class="header-title">Reenee's Masterpieces</h1>
-      <p class="header-decription">
-        Come and explore the beauty of artful clutch bags and potlis
+    <header class="header-section">
+      <article class="header-section__header-text">
+        <div>
+          <a href="./index.html"
+            ><img
+              src="./assets/logos/main_logo.jpg"
+              alt="main-logo"
+              class="main-logo"
+          /></a>
+          <p class="header-section__mainheading nav-heading">
+            Reenee's Masterpieces
+          </p>
+        </div>
+      </article>
+    </header>
+    <section class="background-image">
+      <p class="title-box">
+        Welcome to Reenee's Masterpieces, your haven for exquisite handmade
+        clutch bags and potlis. Delve into our curated collection, where each
+        accessory is a testament to artisanal craftsmanship and timeless
+        elegance. From intricate designs to vibrant colors, every piece tells a
+        unique story of tradition and creativity. Whether you're seeking a
+        statement piece for a special occasion or a versatile accessory for
+        everyday chic, our catalog offers a diverse array of options to suit
+        your style. Discover the beauty of handmade artistry at Reenee's
+        Masterpieces, where every clutch and potli is a masterpiece waiting to
+        be cherished.
       </p>
-    </div>
-    <div class="slideshow-container">
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 11</div>
-        <img src="./assets/image01.jpg" style="width: 100%" />
-        <div class="text">Caption Text</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 11</div>
-        <img src="./assets/image02.jpg" style="width: 100%" />
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 11</div>
-        <img src="./assets/image03.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">4 / 11</div>
-        <img src="./assets/image04.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">5 / 11</div>
-        <img src="./assets/image05.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">6 / 11</div>
-        <img src="./assets/image06.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">7 / 11</div>
-        <img src="./assets/image07.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">8 / 11</div>
-        <img src="./assets/image08.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">9 / 11</div>
-        <img src="./assets/image09.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">10 / 11</div>
-        <img src="./assets/image10.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <div class="mySlides fade">
-        <div class="numbertext">11 / 11</div>
-        <img src="./assets/image11.jpg" style="width: 100%" />
-        <div class="text">Caption Three</div>
-      </div>
-
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <br />
-
-    <div style="text-align: center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
-      <span class="dot" onclick="currentSlide(7)"></span>
-      <span class="dot" onclick="currentSlide(8)"></span>
-      <span class="dot" onclick="currentSlide(9)"></span>
-      <span class="dot" onclick="currentSlide(10)"></span>
-      <span class="dot" onclick="currentSlide(11)"></span>
-    </div>
-
-    <div class="productCatalog">
-      <div>Image Product Description Product Price</div>
-    </div>
-    <div class="footer">
-      <p>
-        Inbox me for details to purchase (Reene's email here) with mailto link
-      </p>
-      <p>FB Page</p>
-      <p>Chat to WhatsApp Message</p>
-    </div>
-    <script src="./scripts/script.js"></script>
+      <div class="surrounding-title-box"></div>
+    </section>
+    <section class="catalog">
+      <article class="product">
+        <img
+          src="./assets/images/image01.jpg"
+          alt="Product 1 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image02.jpg"
+          alt="Product 2 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image03.jpg"
+          alt="Product 3 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image04.jpg"
+          alt="Product 4 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image05.jpg"
+          alt="Product 5 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image06.jpg"
+          alt="Product 6 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image07.jpg"
+          alt="Product 7 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image08.jpg"
+          alt="Product 8 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image09.jpg"
+          alt="Product 9 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image10.jpg"
+          alt="Product 10 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+      <article class="product">
+        <img
+          src="./assets/images/image11.jpg"
+          alt="Product 11 Image"
+          class="product__image"
+        />
+        <div class="product__name">
+          <p>Product Name</p>
+        </div>
+        <div class="product__desc">
+          <p>Description</p>
+        </div>
+        <div class="product__price">
+          <p>Price</p>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <p>Please visit this page for more details:</p>
+      <p>To Contact to purchase, Please send message through WhatsApp</p>
+      <p>&copy Anurag Bhattacharya</p>
+    </footer>
   </body>
 </html>
