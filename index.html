@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reenee's Masterpieces</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/scripts.js" defer></script>
   </head>
   <body>
     <header class="header-section">
@@ -45,6 +46,7 @@
           src="./assets/images/image-01.jpg"
           alt="Product 1 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-01.jpg', 'Hand Crafted Clutch')"
         />
         <h1 class="product__name">Hand Crafted Clutch</h1>
         <p class="product__price">899 &#8377;</p>
@@ -98,6 +100,7 @@
           src="./assets/images/image-02.jpg"
           alt="Product 2 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-02.jpg', 'Handcrafted Clutch')"
         />
         <h1 class="product__name">Handcrafted Clutch</h1>
         <p class="product__price">899 &#8377;</p>
@@ -143,6 +146,7 @@
           src="./assets/images/image-03.jpg"
           alt="Product 3 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-03.jpg', 'Handcrafted Clutch')"
         />
         <h1 class="product__name">Handcrafted Clutch</h1>
         <p class="product__price">899 &#8377;</p>
@@ -188,6 +192,7 @@
           src="./assets/images/image-04.jpg"
           alt="Product 4 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-04.jpg', 'Handcrafted Clutch')"
         />
         <h1 class="product__name">Handcrafted Clutch</h1>
         <p class="product__price">1299 &#8377;</p>
@@ -237,6 +242,7 @@
           src="./assets/images/image-05.jpg"
           alt="Product 5 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-05.jpg', 'Handcrafted Bridal Clutch')"
         />
         <h1 class="product__name">Handcrafted Bridal Clutch</h1>
         <p class="product__price">1399 &#8377;</p>
@@ -292,6 +298,7 @@
           src="./assets/images/image-06.jpg"
           alt="Product 6 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-06.jpg', 'Handcrafted Clutch Bag')"
         />
         <h1 class="product__name">Handcrafted Clutch Bag</h1>
         <p class="product__price">499 &#8377;</p>
@@ -346,6 +353,7 @@
           src="./assets/images/image-07.jpg"
           alt="Product 7 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-07.jpg', 'Handcrafted Clutch Bag')"
         />
         <h1 class="product__name">Handcrafted Clutch Bag</h1>
         <p class="product__price">499 &#8377;</p>
@@ -393,6 +401,7 @@
           src="./assets/images/image-08.jpg"
           alt="Product 8 Image"
           class="product__image"
+          onclick="openPopup('./assets/images/image-08.jpg', 'Handcrafted Bridal Clutch')"
         />
         <h1 class="product__name">Handcrafted Bridal Clutch</h1>
         <p class="product__price">1399 &#8377;</p>
@@ -446,6 +455,19 @@
           Pattern: Features a subtle checked pattern that adds a touch of
           timeless elegance.
         </div>
+      </article>
+    </section>
+    <!-- Popup container -->
+    <section id="popup-container" class="popup-container">
+      <span class="close-btn" onclick="closePopup()">&times;</span>
+      <article class="popup-content">
+        <img
+          src=""
+          alt="Product Image Popup"
+          class="popup-image"
+          id="popup-image"
+        />
+        <div class="popup-title" id="popup-title"></div>
       </article>
     </section>
     <footer>
