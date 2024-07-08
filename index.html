@@ -40,22 +40,39 @@
     <p class="shipping-charge">
       *Shipping Charge to be included with all Products
     </p>
+    <section class="cart-container">
+      <article class="cart-icon">
+        <img
+          src="./assets/icons/shopping-cart.svg"
+          alt="Cart"
+          class="cart-image"
+        />
+        <span id="cart-count" class="cart-count">0</span>
+      </article>
+    </section>
     <section class="catalog">
       <article class="product">
         <img
           src="./assets/images/image-01.jpg"
           alt="Product 1 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-01.jpg', 'Hand Crafted Clutch')"
+          onclick="openPopup('./assets/images/image-01.jpg', 'Blossom Bloom Handcrafted Purse')"
         />
-        <h1 class="product__name">Hand Crafted Clutch</h1>
+        <h1 class="product__name">Blossom Bloom Handcrafted Purse</h1>
         <p class="product__price">899 &#8377;</p>
         <p class="product__price">$10.79 USD</p>
+        <button
+          onclick="addToCart({name: 'Blossom Bloom Handcrafted Purse', priceInRupees: '899', priceInUSD: '10.79', image: './assets/images/image-01.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Elevate your style with our exquisite Hand Crafted Clutch, a perfect
-          blend of elegance and sophistication. Crafted from high-quality PU
-          leather, this clutch is a must-have accessory for any fashion-forward
-          individual.
+          Elevate your style with our exquisite Blossom Bloom Handcrafted Purse,
+          a perfect blend of elegance and sophistication. Crafted from
+          high-quality materials, this purse is adorned with beautiful floral
+          embellishments, making it a must-have accessory for any
+          fashion-forward individual.
         </div>
         <div class="product__desc">
           <h3>Materials and Craftmanship:</h3>
@@ -100,16 +117,22 @@
           src="./assets/images/image-02.jpg"
           alt="Product 2 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-02.jpg', 'Handcrafted Clutch')"
+          onclick="openPopup('./assets/images/image-02.jpg', 'Floral Elegance Clutch')"
         />
-        <h1 class="product__name">Handcrafted Clutch</h1>
+        <h1 class="product__name">Floral Elegance Clutch</h1>
         <p class="product__price">899 &#8377;</p>
         <p class="product__price">$10.79 USD</p>
+        <button
+          onclick="addToCart({name: 'Floral Elegance Clutch', priceInRupees: '899', priceInUSD: '10.79', image: './assets/images/image-02.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Add a touch of elegance to your ensemble with our exquisite
-          Handcrafted Clutch. Made from high-quality PU leather, this clutch is
-          the perfect accessory for any stylish individual looking for a unique
-          and artisanal touch.
+          Add a touch of elegance to your ensemble with our exquisite Floral
+          Elegance Clutch. Made from high-quality PU leather, this clutch is the
+          perfect accessory for any stylish individual looking for a unique and
+          artisanal touch.
         </div>
         <div class="product__desc">
           <h3>Materials and Craftmanship:</h3>
@@ -146,13 +169,19 @@
           src="./assets/images/image-03.jpg"
           alt="Product 3 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-03.jpg', 'Handcrafted Clutch')"
+          onclick="openPopup('./assets/images/image-03.jpg', 'Garden Elegance Bag')"
         />
-        <h1 class="product__name">Handcrafted Clutch</h1>
+        <h1 class="product__name">Garden Elegance Bag</h1>
         <p class="product__price">899 &#8377;</p>
         <p class="product__price">$10.79 USD</p>
+        <button
+          onclick="addToCart({name: 'Garden Elegance Bag', priceInRupees: '899', priceInUSD: '10.79', image: './assets/images/image-03.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Discover the epitome of elegance with our Handcrafted Clutch, a
+          Discover the epitome of elegance with our Garden Elegance Bag, a
           meticulously designed accessory that combines premium materials with
           exquisite craftsmanship. Perfect for any fashion-forward individual,
           this clutch adds a sophisticated touch to any ensemble.
@@ -192,16 +221,22 @@
           src="./assets/images/image-04.jpg"
           alt="Product 4 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-04.jpg', 'Handcrafted Clutch')"
+          onclick="openPopup('./assets/images/image-04.jpg', 'Vintage Glamour Clutch')"
         />
-        <h1 class="product__name">Handcrafted Clutch</h1>
+        <h1 class="product__name">Vintage Glamour Clutch</h1>
         <p class="product__price">1299 &#8377;</p>
         <p class="product__price">$15.59 USD</p>
+        <button
+          onclick="addToCart({name: 'Vintage Glamour Clutch', priceInRupees: '1299', priceInUSD: '15.59', image: './assets/images/image-04.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Step out in style with our Handcrafted Clutch, a stunning accessory
-          that showcases the perfect blend of traditional artistry and modern
-          elegance. Designed for the discerning fashion enthusiast, this clutch
-          adds a unique and sophisticated touch to any outfit.
+          Step out in style with our Vintage Glamour Clutch, a stunning
+          accessory that showcases the perfect blend of traditional artistry and
+          modern elegance. Designed for the discerning fashion enthusiast, this
+          clutch adds a unique and sophisticated touch to any outfit.
         </div>
         <div class="product__desc">
           <h3>Materials and Craftmanship:</h3>
@@ -242,16 +277,22 @@
           src="./assets/images/image-05.jpg"
           alt="Product 5 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-05.jpg', 'Handcrafted Bridal Clutch')"
+          onclick="openPopup('./assets/images/image-05.jpg', 'Majestic Bridal Purse')"
         />
-        <h1 class="product__name">Handcrafted Bridal Clutch</h1>
+        <h1 class="product__name">Majestic Bridal Purse</h1>
         <p class="product__price">1399 &#8377;</p>
         <p class="product__price">$16.79 USD</p>
+        <button
+          onclick="addToCart({name: 'Majestic Bridal Purse', priceInRupees: '1399', priceInUSD: '16.79', image: './assets/images/image-05.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Enhance your bridal look with our elegant and stylish Handcrafted
-          Bridal Clutch. Designed with meticulous attention to detail, this mint
-          green clutch is the perfect accessory for your special day, offering
-          both beauty and functionality.
+          Enhance your bridal look with our elegant and stylish Majestic Bridal
+          Purse. Meticulously crafted to complement your special day, this purse
+          combines traditional craftsmanship with modern elegance, adding a
+          touch of sophistication to your ensemble.
         </div>
         <div class="product__desc">
           <h3>Materials and Craftmanship:</h3>
@@ -298,14 +339,20 @@
           src="./assets/images/image-06.jpg"
           alt="Product 6 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-06.jpg', 'Handcrafted Clutch Bag')"
+          onclick="openPopup('./assets/images/image-06.jpg', 'Ocean Bloom Clutch')"
         />
-        <h1 class="product__name">Handcrafted Clutch Bag</h1>
+        <h1 class="product__name">Ocean Bloom Clutch</h1>
         <p class="product__price">499 &#8377;</p>
         <p class="product__price">$5.99 USD</p>
+        <button
+          onclick="addToCart({name: 'Ocean Bloom Clutch', priceInRupees: '499', priceInUSD: '5.99', image: './assets/images/image-06.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Introducing our Handcrafted Clutch Bag, a fusion of functional design
-          and artistic flair, perfect for those who appreciate unique, stylish
+          Introducing our Ocean Bloom Clutch, a fusion of functional design and
+          artistic flair, perfect for those who appreciate unique, stylish
           accessories. Crafted from water-resistant polyurethane leather, this
           clutch is not only beautiful but also durable, making it an excellent
           choice for daily use or special occasions.
@@ -353,15 +400,21 @@
           src="./assets/images/image-07.jpg"
           alt="Product 7 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-07.jpg', 'Handcrafted Clutch Bag')"
+          onclick="openPopup('./assets/images/image-07.jpg', 'Garden Party Handbag')"
         />
-        <h1 class="product__name">Handcrafted Clutch Bag</h1>
+        <h1 class="product__name">Garden Party Handbag</h1>
         <p class="product__price">499 &#8377;</p>
         <p class="product__price">$5.99 USD</p>
+        <button
+          onclick="addToCart({name: 'Garden Party Handbag', priceInRupees: '499', priceInUSD: '5.99', image: './assets/images/image-07.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Elevate your accessory game with our Handcrafted Clutch Bag, the
-          epitome of elegance and craftsmanship. Designed for the fashion-savvy
-          and environmentally conscious, this clutch is made from high-quality,
+          Elevate your accessory game with our Garden Party Handbag, the epitome
+          of elegance and craftsmanship. Designed for the fashion-savvy and
+          environmentally conscious, this clutch is made from high-quality,
           water-resistant polyurethane leather, ensuring both durability and
           style.
         </div>
@@ -401,13 +454,19 @@
           src="./assets/images/image-08.jpg"
           alt="Product 8 Image"
           class="product__image"
-          onclick="openPopup('./assets/images/image-08.jpg', 'Handcrafted Bridal Clutch')"
+          onclick="openPopup('./assets/images/image-08.jpg', 'Golden Elegance Bridal Clutch')"
         />
-        <h1 class="product__name">Handcrafted Bridal Clutch</h1>
+        <h1 class="product__name">Golden Elegance Bridal Clutch</h1>
         <p class="product__price">1399 &#8377;</p>
         <p class="product__price">$16.78 USD</p>
+        <button
+          onclick="addToCart({name: 'Golden Elegance Bridal Clutch', priceInRupees: '1399', priceInUSD: '16.78', image: './assets/images/image-08.jpg'})"
+          class="add-to-cart-btn"
+        >
+          Add to Cart
+        </button>
         <div class="product__desc">
-          Embrace the essence of bridal elegance with our Handcrafted Bridal
+          Embrace the essence of bridal elegance with our Golden Elegance Bridal
           Clutch, tailored for the modern bride who desires a blend of style and
           sophistication. This clutch is meticulously designed to complement
           your wedding attire, ensuring you look flawless on your special day.

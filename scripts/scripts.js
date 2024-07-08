@@ -17,6 +17,30 @@ function closePopup() {
   popup.style.display = "none"; // Hide popup container
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  updateCartCount();
+});
+
+function addToCart({ name, priceInRupees, priceInUSD, image }) {
+  const product = { name, priceInRupees, priceInUSD, image };
+
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  cartItems.push(product);
+
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+  updateCartCount();
+
+  alert("Product added to cart!");
+}
+
+function updateCartCount() {
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  let cartCount = cartItems.length;
+  document.getElementById("cart-count").textContent = cartCount;
+}
+
 // Hide popup on initial page load
 window.onload = function () {
   var popup = document.getElementById("popup-container");
